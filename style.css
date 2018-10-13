@@ -2,7 +2,10 @@
   border: 2px blue solid;
   width: 400px;
   height: 500px;
-  display: grid;
+    /*block level grid*/
+  display: grid;  
+    /*define column widths explicitly or relatively*/
+  grid-template-columns: 100px 10% 10% 20px 50%;
 }
 
 .box {
