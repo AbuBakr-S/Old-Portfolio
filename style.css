@@ -2,21 +2,19 @@
   display: grid;
   border: 2px blue solid;
   height: 500px;
-  width: 500px;
+  width:500px;
   grid-template: repeat(4, 1fr 2fr) / repeat(4, 3fr 2fr);
   grid-gap: 5px;
 }
 
 .a {
-    /*Make single grid items take up 2 rows, rows 5 and 6. (end - start = size)*/
-    /*grid-row-start: 5;
-      grid-row-end: 7;*/
-  
-    /*shorthand: start / end*/
-    /*grid-row: 5 / 7;*/
-    
-    /*shorthand - avoid miscalculation*/
-    grid-row: 5 / span 2;
+  grid-row: 5 / 7;
+  grid-column: 1 / span 2;
+}
+
+.b {
+  grid-column: 2 / span 6;
+  grid-row: 2 / span 3;
 }
 
 .box {
