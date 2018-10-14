@@ -1,6 +1,6 @@
 .grid {
   border: 2px blue solid;
-  /*width: 400px;*/
+  /*width: 1000px;*/
   height: 500px;
     /*block level grid*/
   display: grid;  
@@ -10,7 +10,15 @@
     /*repeat function allows for shorthand*/
     /*grid-template-columns: repeat(2, 1fr 3fr);*/
     
-    grid-template-columns: 100px minmax(100px, 500px) 100px;
+    /*minmax function allows for adaptive browser resizing*/
+    grid-template-columns: 100px minmax(100px, 500px) minmax(200px, 400px);
+    
+    /*
+    grid-row-gap: 15px
+    grid-column-gap: 10px; 
+    */
+    
+    grid-gap: 10px;
 }
 
 .box {
