@@ -1,25 +1,199 @@
+/* Creating my own responsive columns */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    position: relative; /* Required for Bootstrap ScrollSpy */
+}
+
+h1 { 
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h3 { 
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h4 { 
+    display: block;
+    font-size: 1em;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h5 { 
+    display: block;
+    font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h6 { 
+    display: block;
+    font-size: .67em;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
 .grid {
-  display: grid;
   border: 2px blue solid;
-  height: 500px;
-  width:500px;
-  grid-template: repeat(4, 1fr 2fr) / repeat(4, 3fr 2fr);
-  grid-gap: 5px;
+  height: 2000px;
+  /* Leave width blank to allow for adjustment */
+  display: grid;  /*block level grid*/  
+  grid-template-rows: 2.5% 30% 35% 30% 2.5%;
+  grid-template-columns: 5% 10% 35% 35% 10% 5%; /*define column widths explicitly or relatively*/
 }
 
-.a {
-  grid-row: 5 / 7;
-  grid-column: 1 / span 2;
+
+/* ##### NAVIGATION ##### */
+
+/* Grid positioning */
+.top-nav.a {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 6;
 }
 
-.b {
-  grid-column: 2 / span 6;
-  grid-row: 2 / span 3;
+/* Add a black background color to the top navigation */
+.top-nav {
+    background-color: #f2f2f2;
+    overflow: hidden;
 }
 
-.box {
-  background-color: beige;
-  color: black;
-  border-radius: 5px;
-  border: 2px dodgerblue solid;
+/* Style the links inside the navigation bar */
+.top-nav a {
+    float: left;
+    color: rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
+
+/* Change the color of links on hover */
+.top-nav a:hover {
+    color: #000;
+}
+
+/* Add a color to the active/current link */
+.top-nav a.active {
+    color: #008ae6;
+}
+/* ##### END ##### */
+
+
+
+/* ##### FORM STYLES ##### */
+
+/* Grid positioning */
+.contact-form.b {
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 2;
+}
+
+
+/* ##### END OF FORM STYLES ##### */
+
+
+
+
+
+
+
+
+
+
+/* ### MOBILE DESIGN BELOW ### */
+
+@media(max-width: 600px){
+
+.grid {
+  border: 2px blue solid;
+  height: 2000px;
+  /* Leave width blank to allow for adjustment */
+  display: grid;  /*block level grid*/  
+  grid-template-rows: 2.5% 30% 35% 30% 2.5%;
+  grid-template-columns: 5% 10% 35% 35% 10% 5%; /*define column widths explicitly or relatively*/
+}
+  
+  
+/* ##### NAVIGATION ##### */
+
+/* Grid positioning */
+.top-nav.a {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 6;
+}
+
+/* Add a black background color to the top navigation */
+.top-nav {
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.top-nav a {
+    float: left;
+    color: rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.top-nav a:hover {
+    color: #000;
+}
+
+/* Add a color to the active/current link */
+.top-nav a.active {
+    color: #008ae6;
+}
+
+}
+  
+  
+
+
