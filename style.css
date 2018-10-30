@@ -1,4 +1,4 @@
-/* Creating my own responsive columns */
+/* Creating my own responsive columns
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -11,6 +11,7 @@
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+*/
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -82,9 +83,14 @@ h6 {
   height: 2000px;
   /* Leave width blank to allow for adjustment */
   display: grid;  /*block level grid*/  
-  grid-template-rows: 2.5% 30% 35% 30% 2.5%;
-  grid-template-columns: 5% 10% 35% 35% 10% 5%; /*define column widths explicitly or relatively*/
+  grid-template-rows: 1000px 500px 500px 500px;
+  grid-template-columns: repeat(12, 8.33%); /*define column widths explicitly or relatively*/
 }
+
+
+
+
+
 
 
 /* ##### NAVIGATION ##### */
@@ -92,7 +98,7 @@ h6 {
 /* Grid positioning */
 .top-nav.a {
     grid-row: 1 / span 1;
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 12;
 }
 
 /* Add a black background color to the top navigation */
@@ -124,16 +130,22 @@ h6 {
 
 
 
-/* ##### FORM STYLES ##### */
+
+
+
+
+
+/* ##### CONTACT ME FORM ##### */
 
 /* Grid positioning */
 .contact-form.b {
     grid-row: 2 / span 1;
-    grid-column: 3 / span 2;
+    grid-column: 2 / span 10;
+    margin: 0 5%;
 }
 
 
-/* ##### END OF FORM STYLES ##### */
+/* ##### END OF FORM ##### */
 
 
 

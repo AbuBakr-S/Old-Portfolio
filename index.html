@@ -17,139 +17,88 @@
     <title>Abubakar's Portfolio</title>
   </head>
   <body>
-    
-    
-    <!-- Bootstrap Responsive Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">A.S</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CV</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Projects
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">An Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Me</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-    <!-- End -->
-    
-    
-    <!-- Bootstrap Scrollspy -->
-    <nav id="navbar-example2" class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">A.S</a>
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="#about-me">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#cv">CV</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact-me">Contact Me</a>
-        </li>
-      </ul>
-    </nav>
-    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-      <h4 id="about-me">About Me</h4>
-      <p>...</p>
-      <h4 id="cv">CV</h4>
-      <p>...</p>
-      <h4 id="projects">Projects</h4>
-      <p>...</p>
-      <h4 id="contact-me">Contact Me</h4>
-      <p>...</p>
-    </div>
-    <!-- End -->
-    
       
     <!-- Grid Template -->
     <div class="grid">
-        
-        <!-- Navigation -->
-        <div class="top-nav a">
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">A.S</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">CV</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>  
-        </div>
     
-        <!-- Form to Get in Contact -->
-        <div class="contact-form b"><!--class will be linked to the grid template-->
-          <!--  Contact Form Copy -->
-            <div class="container-fluid contact-form">
-                <form action="action_page.php"><!-- Still need to create this -->
-                    
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="exampleInputEmail">Email Address:</label>
-                        <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email">
-                        <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
-                    </div>
-                    
-                    <div class="form-group">
-                        <textarea class="form-control" placeholder="Your Message"></textarea>
-                    </div>
-                    
-                    <div class="form-check">
-                    <label class="form-check-label">
-                      <input type="checkbox" class="form-check-input">
-                      Sign up to notifications
-                    </label>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary">Submit</button>
+        <!-- Bootstrap Scrollspy -->
+        <div class="top-nav a">
+            <nav id="navbar-example2" class="navbar navbar-light bg-light">
                 
-                </form>
+            <!-- Testing Navigation Toggle     
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            -->
+
+              <a class="navbar-brand" href="#">A.S</a>
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-me">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#cv">CV</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact-me">Contact Me</a>
+                </li>
+              </ul>
+            </nav>
+            <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+              <h4 id="about-me">About Me</h4>
+              <p>...</p>
+                
+              <h4 id="cv">CV</h4>
+              <p>...</p>
+                
+              <h4 id="projects">Projects</h4>
+              <p>...</p>
+                
+              <h4 id="contact-me">Contact Me</h4>
+              <!-- Form to Get in Contact -->
+                <div class="contact-form b"><!--class will be linked to the grid template-->
+                    <div class="container-fluid contact-form">
+                        <form action="action_page.php"><!-- Still need to create this -->
+
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail">Email Address:</label>
+                                <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email">
+                                <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Your Message"></textarea>
+                            </div>
+
+                            <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input">
+                              Sign up to notifications
+                            </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+
+                        </form>
+                    </div>
+                </div>
+                <!-- End of Contact Form -->
             </div>
         </div>
+        <!-- End -->
         
-    </div><!-- End of Grid Template -->    
+        
+        
+    </div>
+    <!-- End of Grid Template -->
     
     
     <!-- Boostrap JS CDN -->
